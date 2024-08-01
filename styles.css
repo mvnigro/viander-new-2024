@@ -79,6 +79,11 @@ nav {
     margin: 0 auto;
 }
 
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     height: 60px;
 }
@@ -87,7 +92,7 @@ nav {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
-    margin-left: auto;
+    margin-left: 1rem;
 }
 
 nav ul {
@@ -113,10 +118,12 @@ nav ul li a:hover {
 
 @media (max-width: 768px) {
     nav {
-        display: flex;
         justify-content: space-between;
-        align-items: center;
         padding: 0.5rem;
+    }
+
+    .nav-left {
+        order: -1;
     }
 
     .menu-toggle {
@@ -146,6 +153,7 @@ nav ul li a:hover {
 
     .theme-toggle {
         font-size: 1.2rem;
+        margin-right: 1rem;
     }
 
     .logo {
