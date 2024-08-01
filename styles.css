@@ -292,11 +292,11 @@ h2 {
 
 @media (max-width: 768px) {
     #hero h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     #hero p {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .beneficios-grid, .produtos-grid, .sobre-grid {
@@ -305,6 +305,63 @@ h2 {
 
     .contato-info {
         flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        height: 40px;
+    }
+
+    .cta-button, .saiba-mais {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .produto {
+        padding: 1rem;
+    }
+
+    .produto img {
+        max-width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content > div {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #hero h1 {
+        font-size: 1.8rem;
+    }
+
+    #hero p {
+        font-size: 0.9rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .beneficio, .produto {
+        padding: 1rem;
+    }
+
+    .contato-info div {
+        width: 100%;
     }
 }
 
