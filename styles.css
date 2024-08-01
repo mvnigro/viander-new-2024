@@ -270,8 +270,18 @@ h2 {
 
 #sobre {
     background-color: #f9f9f9;
-    padding: 4rem 0;
+    padding: 6rem 0;
     margin-top: 4rem;
+}
+
+.sobre-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+#sobre h2 {
+    margin-bottom: 3rem;
 }
 
 #sobre p {
@@ -279,28 +289,54 @@ h2 {
     margin: 0 auto 2rem;
     text-align: center;
     font-size: 1.1rem;
+    line-height: 1.8;
 }
 
 .sobre-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+    margin-top: 4rem;
 }
 
 .sobre-item {
     text-align: center;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.sobre-item:hover {
+    transform: translateY(-5px);
 }
 
 .sobre-item i {
-    font-size: 2.5rem;
+    font-size: 3rem;
     color: var(--secondary-color);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .sobre-item h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    #sobre {
+        padding: 4rem 0;
+    }
+
+    .sobre-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .sobre-item {
+        padding: 1.5rem;
+    }
 }
 
 #contato {
