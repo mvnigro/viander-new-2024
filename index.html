@@ -26,6 +26,9 @@
                 <li><a href="#sobre">Sobre nós</a></li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
+            <button id="theme-toggle" class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </nav>
     </header>
 
@@ -203,6 +206,37 @@
             // Efeito de entrada para os itens da seção Sobre
             const sobreItems = document.querySelectorAll('.sobre-item');
             createEntryEffect(sobreItems, 400); // Um pouco mais lento que os benefícios
+
+            // Controle do tema escuro
+            const themeToggle = document.getElementById('theme-toggle');
+            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+            function toggleTheme() {
+                if (prefersDarkScheme.matches) {
+                    document.body.classList.toggle("light-theme");
+                    var theme = document.body.classList.contains("light-theme") ? "light" : "dark";
+                } else {
+                    document.body.classList.toggle("dark-theme");
+                    var theme = document.body.classList.contains("dark-theme") ? "dark" : "light";
+                }
+                document.documentElement.setAttribute('data-theme', theme);
+                localStorage.setItem('theme', theme);
+            }
+
+            themeToggle.addEventListener("click", toggleTheme);
+
+            // Verifica o tema salvo no localStorage
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                document.documentElement.setAttribute('data-theme', savedTheme);
+                if (savedTheme === 'dark') {
+                    if (prefersDarkScheme.matches) {
+                        document.body.classList.remove("light-theme");
+                    } else {
+                        document.body.classList.add("dark-theme");
+                    }
+                }
+            }
         });
     </script>
 </body>

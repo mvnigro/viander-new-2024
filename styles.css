@@ -6,6 +6,16 @@
     --text-color: #333;
     --background-color: #F5F5F5;
     --accent-color: #FFA500;
+    --card-background: #FFFFFF;
+}
+
+[data-theme="dark"] {
+    --primary-color: #2A8D2A;
+    --secondary-color: #D80000;
+    --text-color: #F0F0F0;
+    --background-color: #1A1A1A;
+    --accent-color: #FFB700;
+    --card-background: #2A2A2A;
 }
 
 * {
@@ -414,6 +424,28 @@ h2 {
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.beneficio, .produto, .sobre-item {
+    background-color: var(--card-background);
+    transition: background-color 0.3s ease;
 }
 
 @media (max-width: 768px) {
