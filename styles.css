@@ -400,6 +400,7 @@ h2 {
 
     nav {
         justify-content: space-between;
+        padding: 0.5rem;
     }
 
     nav ul {
@@ -438,7 +439,7 @@ h2 {
     }
 
     main {
-        padding: 1.5rem;
+        padding: 1rem;
         text-align: center;
     }
 
@@ -447,7 +448,7 @@ h2 {
     }
 
     body {
-        padding: 0 1rem;
+        padding: 0;
     }
 }
 
