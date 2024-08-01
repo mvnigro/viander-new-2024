@@ -490,6 +490,11 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+.scroll-target {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
 @media (max-width: 768px) {
     nav {
         flex-direction: column;
