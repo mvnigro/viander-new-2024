@@ -79,13 +79,16 @@ nav {
     margin: 0 auto;
 }
 
-.nav-left {
+.nav-left, .nav-right {
     display: flex;
     align-items: center;
 }
 
-.logo {
-    height: 60px;
+.home-icon {
+    color: var(--menu-text-color);
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    text-decoration: none;
 }
 
 .menu-toggle {
@@ -114,6 +117,19 @@ nav ul li a {
 
 nav ul li a:hover {
     color: var(--primary-color);
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
@@ -153,11 +169,6 @@ nav ul li a:hover {
 
     .theme-toggle {
         font-size: 1.2rem;
-        margin-right: 1rem;
-    }
-
-    .logo {
-        height: 40px;
     }
 }
 
