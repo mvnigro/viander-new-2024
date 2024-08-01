@@ -50,6 +50,7 @@ nav {
     display: none;
     cursor: pointer;
     font-size: 1.5rem;
+    margin-left: auto;
 }
 
 nav ul {
@@ -338,6 +339,10 @@ h2 {
         flex-direction: column;
     }
 
+    nav {
+        justify-content: space-between;
+    }
+
     nav ul {
         flex-direction: column;
         align-items: center;
@@ -371,6 +376,15 @@ h2 {
 
     .footer-content > div {
         margin-bottom: 1.5rem;
+    }
+
+    main {
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .beneficio, .produto, #sobre p, .contato-info div {
+        text-align: center;
     }
 }
 
