@@ -13,7 +13,10 @@
             <a href="index.html">
                 <img src="assets/img/logo-viander.png" alt="Viander Logo" class="logo">
             </a>
-            <ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
                 <li><a href="#produtos">Produtos</a></li>
                 <li><a href="#sobre">Sobre nós</a></li>
                 <li><a href="#contato">Contato</a></li>
@@ -153,5 +156,23 @@
         </div>
         <p class="copyright">© Copyright Viander 2024</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Fechar o menu ao clicar em um link
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
