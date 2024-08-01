@@ -239,6 +239,26 @@ h2 {
     margin-bottom: 1rem;
 }
 
+.produto-icones {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.produto-icones span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.produto-icones i {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
 .saiba-mais {
     background-color: var(--primary-color);
     color: white;
