@@ -179,21 +179,30 @@
                 });
             });
 
+            // Função para criar o efeito de entrada
+            function createEntryEffect(elements, delay = 300) {
+                const observer = new IntersectionObserver((entries) => {
+                    entries.forEach((entry, index) => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('visible');
+                            }, index * delay);
+                        }
+                    });
+                }, { threshold: 0.2 });
+
+                elements.forEach(element => {
+                    observer.observe(element);
+                });
+            }
+
             // Efeito de entrada para os benefícios
             const beneficios = document.querySelectorAll('.beneficio');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry, index) => {
-                    if (entry.isIntersecting) {
-                        setTimeout(() => {
-                            entry.target.classList.add('visible');
-                        }, index * 300); // 300ms de atraso entre cada bloco
-                    }
-                });
-            }, { threshold: 0.2 });
+            createEntryEffect(beneficios);
 
-            beneficios.forEach(beneficio => {
-                observer.observe(beneficio);
-            });
+            // Efeito de entrada para os itens da seção Sobre
+            const sobreItems = document.querySelectorAll('.sobre-item');
+            createEntryEffect(sobreItems, 400); // Um pouco mais lento que os benefícios
         });
     </script>
 </body>

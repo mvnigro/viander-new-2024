@@ -325,11 +325,18 @@ h2 {
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.5s, transform 0.5s;
+    opacity: 0;
+    transform: translateY(30px);
 }
 
 .sobre-item:hover {
     transform: translateY(-5px);
+}
+
+.sobre-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .sobre-item i {
