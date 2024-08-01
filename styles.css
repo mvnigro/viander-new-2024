@@ -151,7 +151,7 @@ nav ul li a:hover {
     .menu-toggle {
         display: block;
         font-size: 1.2rem;
-        margin-left: 0;
+        margin-right: 1rem;
     }
 
     .nav-menu {
@@ -181,6 +181,23 @@ nav ul li a:hover {
 
     .theme-toggle {
         font-size: 1.2rem;
+    }
+
+    nav {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .nav-left, .nav-right {
+        flex: 1;
+    }
+
+    .nav-left {
+        justify-content: flex-start;
+    }
+
+    .nav-right {
+        justify-content: flex-end;
     }
 }
 
