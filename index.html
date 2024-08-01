@@ -15,19 +15,17 @@
 <body>
     <header>
         <nav>
-            <div class="nav-left">
+            <div class="nav-container">
                 <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-            </div>
-            <ul class="nav-menu">
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#sobre">Sobre nós</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-            <div class="nav-right">
-                <button id="theme-toggle" class="theme-toggle">
+                <button class="menu-toggle" aria-label="Abrir menu">
+                    <span class="hamburger"></span>
+                </button>
+                <ul class="nav-menu">
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#sobre">Sobre nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
@@ -173,6 +171,7 @@
             const navMenu = document.querySelector('.nav-menu');
 
             menuToggle.addEventListener('click', function() {
+                menuToggle.classList.toggle('active');
                 navMenu.classList.toggle('active');
             });
 
@@ -180,6 +179,7 @@
             const navLinks = document.querySelectorAll('.nav-menu a');
             navLinks.forEach(link => {
                 link.addEventListener('click', () => {
+                    menuToggle.classList.remove('active');
                     navMenu.classList.remove('active');
                 });
             });
