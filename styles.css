@@ -548,6 +548,8 @@ footer {
     max-width: 100%;
     height: auto;
     max-height: 400px;
+    border-radius: 50% / 70%;
+    overflow: hidden;
 }
 
 @media (max-width: 768px) {
