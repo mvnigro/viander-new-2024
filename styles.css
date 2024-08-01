@@ -140,11 +140,14 @@ nav ul li a:hover {
 
     .nav-left {
         order: -1;
+        display: flex;
+        align-items: center;
     }
 
     .menu-toggle {
         display: block;
         font-size: 1.2rem;
+        margin-left: 1rem;
     }
 
     .nav-menu {
@@ -165,6 +168,11 @@ nav ul li a:hover {
 
     nav ul li {
         margin: 0.5rem 0;
+    }
+
+    .nav-right {
+        display: flex;
+        align-items: center;
     }
 
     .theme-toggle {
