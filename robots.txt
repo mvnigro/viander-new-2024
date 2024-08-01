@@ -2,3 +2,8 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.viander.com.br/sitemap.xml
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://www.viander.com.br/sitemap.xml
