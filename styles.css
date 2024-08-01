@@ -33,6 +33,29 @@ body {
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+body.dark-theme {
+    --primary-color: #2A8D2A;
+    --secondary-color: #D80000;
+    --text-color: #F0F0F0;
+    --background-color: #1A1A1A;
+    --accent-color: #FFB700;
+    --card-background: #2A2A2A;
+    --menu-background: #2A2A2A;
+    --menu-text-color: #F0F0F0;
+}
+
+body.light-theme {
+    --primary-color: #1A5D1A;
+    --secondary-color: #B80000;
+    --text-color: #333;
+    --background-color: #F5F5F5;
+    --accent-color: #FFA500;
+    --card-background: #FFFFFF;
+    --menu-background: #FFFFFF;
+    --menu-text-color: #333;
 }
 
 h1, h2, h3 {
