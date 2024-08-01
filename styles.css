@@ -528,6 +528,52 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
+/* Hero section styles */
+#hero {
+    padding: 50px 20px;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-product-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .hero-product-image {
+        max-height: 300px;
+    }
+}
+
 .scroll-target {
     padding-top: 100px;
     margin-top: -100px;
