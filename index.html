@@ -178,6 +178,20 @@
                     navMenu.classList.remove('active');
                 });
             });
+
+            // Efeito de entrada para os benefícios
+            const beneficios = document.querySelectorAll('.beneficio');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            beneficios.forEach(beneficio => {
+                observer.observe(beneficio);
+            });
         });
     </script>
 </body>
