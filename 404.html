@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Não Encontrada - Viander Brasil</title>
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <img src="assets/img/logo-viander.png" alt="Viander Logo" class="logo">
+            </a>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html#produtos">Produtos</a></li>
+                <li><a href="index.html#sobre">Sobre nós</a></li>
+                <li><a href="index.html#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="error-404">
+            <div class="error-content">
+                <h1>404 - Página Não Encontrada</h1>
+                <p>Desculpe, a página que você está procurando não existe ou foi movida.</p>
+                <a href="index.html" class="btn-voltar">Voltar para a Página Inicial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h3>Localização</h3>
+                <p><i class="fas fa-map-marker-alt"></i> Rua Mendes Caldeira, 555 - Brás<br>São Paulo - SP</p>
+            </div>
+            <div>
+                <h3>Mídias Sociais</h3>
+                <a href="https://www.instagram.com/viander.br/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div>
+                <h3>Importado e Distribuído por</h3>
+                <p>AGROBROKERS IMPORTAÇÃO E EXPORTAÇÃO LTDA</p>
+            </div>
+        </div>
+        <p class="copyright">© Copyright Viander 2024</p>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+
+            menuToggle.addEventListener('click', function() {
+                navMenu.classList.toggle('active');
+            });
+
+            // Fechar o menu ao clicar em um link
+            const navLinks = document.querySelectorAll('.nav-menu a');
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    navMenu.classList.remove('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
