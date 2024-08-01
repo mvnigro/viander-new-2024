@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Roboto+Slab:wght@400;700&display=swap');
 
 :root {
     --primary-color: #1A5D1A;
@@ -15,14 +15,14 @@
 }
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
     background-color: var(--background-color);
 }
 
 h1, h2, h3 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Slab', serif;
 }
 
 header {
@@ -196,6 +196,11 @@ footer {
     text-decoration: none;
     margin-right: 1rem;
     font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: var(--accent-color);
 }
 
 .copyright {
@@ -221,4 +226,8 @@ footer {
     .footer-content > div {
         margin-bottom: 1rem;
     }
+}
+
+.fas, .fab {
+    margin-right: 0.5rem;
 }
