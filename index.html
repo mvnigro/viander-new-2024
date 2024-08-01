@@ -182,12 +182,14 @@
             // Efeito de entrada para os benefícios
             const beneficios = document.querySelectorAll('.beneficio');
             const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
+                entries.forEach((entry, index) => {
                     if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
+                        setTimeout(() => {
+                            entry.target.classList.add('visible');
+                        }, index * 300); // 300ms de atraso entre cada bloco
                     }
                 });
-            }, { threshold: 0.1 });
+            }, { threshold: 0.2 });
 
             beneficios.forEach(beneficio => {
                 observer.observe(beneficio);
