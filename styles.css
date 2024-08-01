@@ -395,12 +395,16 @@ h2 {
     }
 
     main {
-        padding: 1rem;
+        padding: 1.5rem;
         text-align: center;
     }
 
     .beneficio, .produto, #sobre p, .contato-info div {
         text-align: center;
+    }
+
+    body {
+        padding: 0 1rem;
     }
 }
 
