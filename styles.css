@@ -339,7 +339,9 @@ h2 {
 
 .produto img {
     max-width: 80%;
-    height: auto;
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
     margin-bottom: 1.5rem;
 }
 
@@ -716,8 +718,9 @@ footer {
 
 .hero-product-image {
     max-width: 100%;
-    height: auto;
-    max-height: 400px;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
     border-radius: 50% / 70%;
     overflow: hidden;
 }
