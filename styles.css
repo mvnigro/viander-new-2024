@@ -718,8 +718,8 @@ footer {
 
 .hero-product-image {
     max-width: 100%;
-    width: 400px;
-    height: 400px;
+    width: 320px;
+    height: 320px;
     object-fit: contain;
     border-radius: 50% / 70%;
     overflow: hidden;
