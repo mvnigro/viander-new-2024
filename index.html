@@ -234,8 +234,8 @@
 
             themeToggle.addEventListener("click", toggleTheme);
 
-            // Verifica o tema salvo no localStorage ou usa a preferência do sistema
-            const savedTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
+            // Verifica o tema salvo no localStorage ou usa o tema claro como padrão
+            const savedTheme = localStorage.getItem('theme') || 'light';
             setTheme(savedTheme);
         });
     </script>
