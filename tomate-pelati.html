@@ -1,165 +1,545 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tomate Pelati Inteiro Salsa - Viander Brasil</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-container">
-                <a href="index.html" class="home-icon"><i class="fas fa-home"></i></a>
-                <button class="menu-toggle" aria-label="Abrir menu">
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-menu">
-                    <li><a href="index.html#produtos">Produtos</a></li>
-                    <li><a href="index.html#sobre">Sobre nós</a></li>
-                    <li><a href="index.html#contato">Contato</a></li>
-                </ul>
-                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema">
-                    <i class="fas fa-moon"></i>
-                </button>
-            </div>
-        </nav>
-    </header>
-
-    <main class="produto-page">
-        <h1>Tomate Pelati Inteiro Super Salsati</h1>
-        
-        <section class="produto-info">
-            <img src="assets/img/salsati-min.png" alt="Tomate Pelati Inteiro Salsa" class="produto-imagem">
-            <div class="produto-detalhes">
-                <h2>Sobre o Produto</h2>
-                <ul>
-                    <li>Tomate 100% italiano cultivado na Itália</li>
-                    <li>Tomates inteiros, pelados e em conserva</li>
-                    <li>Sabor intenso e adocicado</li>
-                    <li>Ideal para cozinha italiana autêntica</li>
-                    <li>Lata de 2,550kg</li>
-                    <li>Origem: Itália</li>
-                </ul>
-                <p>O Tomate Pelati Inteiro Salsa da Viander é um produto premium, cultivado e processado na Itália, oferecendo o autêntico sabor da culinária italiana para suas receitas.</p>
-            </div>
-        </section>
-
-        <section class="usos">
-            <h2>Usos e Aplicações</h2>
-            <p>O tomate pelado italiano é um ingrediente versátil e essencial na cozinha italiana e internacional. Suas principais aplicações incluem:</p>
-            <ul>
-                <li>Preparação de salsas e molhos tradicionais italianos</li>
-                <li>Base para molhos de pizza gourmet</li>
-                <li>Ingrediente principal em molhos para massas</li>
-                <li>Preparação de sopas e caldos, como o gazpacho</li>
-                <li>Recheios para lasanhas e outros pratos assados</li>
-                <li>Preparações de pratos com frutos do mar</li>
-            </ul>
-        </section>
-
-        <section class="vantagens">
-            <h2>Vantagens do Tomate Pelati</h2>
-            <ul>
-                <li>Sabor mais intenso e adocicado que tomates comuns</li>
-                <li>Textura firme e consistente</li>
-                <li>Facilidade de uso, já vem pelado e pronto para utilizar</li>
-                <li>Maior durabilidade comparado ao tomate fresco</li>
-                <li>Qualidade consistente em todas as estações do ano</li>
-                <li>Ideal para receitas que exigem tomates de alta qualidade</li>
-            </ul>
-        </section>
-
-        <section class="dicas">
-            <h2>Dicas de Uso</h2>
-            <p>Para aproveitar ao máximo o Tomate Pelati Inteiro Salsa:</p>
-            <ul>
-                <li>Esmague levemente os tomates com as mãos antes de adicionar à receita para liberar mais sabor</li>
-                <li>Use o líquido da conserva para adicionar mais sabor aos seus molhos</li>
-                <li>Para um molho rápido, refogue alho e azeite, adicione os tomates esmagados e cozinhe por 15-20 minutos</li>
-                <li>Combine com ervas frescas como manjericão ou orégano para realçar o sabor italiano</li>
-            </ul>
-        </section>
-
-        <section class="video-section">
-            <h2>Veja a qualidade do nosso Tomate Pelati</h2>
-            <div class="video-container">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/r2TzkEM0xO8?si=QetaO_ShkO8I_x-4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-        </section>
-
-        <div class="button-container">
-            <a href="https://wa.me/5511999365401?text=Tenho%20interesse%20em%20comprar%20tomate" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i> Solicite um Orçamento</a>
-        </div>
-    </main>
-
-    <footer>
-        <div class="footer-content">
-            <div>
-                <h3>Localização</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Rua Mendes Caldeira, 555 - Brás<br>São Paulo - SP</p>
-            </div>
-            <div>
-                <h3>Mídias Sociais</h3>
-                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/viander.br/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div>
-                <h3>Importado e Distribuído por</h3>
-                <p>AGROBROKERS IMPORTAÇÃO E EXPORTAÇÃO LTDA</p>
-            </div>
-        </div>
-        <p class="copyright">© Copyright Viander 2024</p>
-    </footer>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const navMenu = document.querySelector('.nav-menu');
-
-            menuToggle.addEventListener('click', function() {
-                menuToggle.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-
-            // Fechar o menu ao clicar em um link
-            const navLinks = document.querySelectorAll('.nav-menu a');
-            navLinks.forEach(link => {
-                link.addEventListener('click', () => {
-                    menuToggle.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
-            });
-
-            // Controle do tema escuro
-            const themeToggle = document.getElementById('theme-toggle');
-            const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-
-            function setTheme(theme) {
-                if (theme === 'dark') {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    document.body.classList.remove('light-theme');
-                    document.body.classList.add('dark-theme');
-                } else {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    document.body.classList.remove('dark-theme');
-                    document.body.classList.add('light-theme');
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tomate Pelati Salsati 2,550 kg | Tomate italiano Viander</title>
+    <meta
+      name="description"
+      content="Tomates inteiros, pelados e em conserva, cultivados na Itália. Para quem gosta de construir o molho desde a textura e dar personalidade a cada receita."
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="theme-color" content="#173d31" />
+    <link
+      rel="canonical"
+      href="https://www.viander.com.br/tomate-pelati.html"
+    />
+    <link rel="icon" href="assets/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Viander Brasil" />
+    <meta
+      property="og:title"
+      content="Tomate Pelati Salsati 2,550 kg | Tomate italiano Viander"
+    />
+    <meta
+      property="og:description"
+      content="Tomates inteiros, pelados e em conserva, cultivados na Itália. Para quem gosta de construir o molho desde a textura e dar personalidade a cada receita."
+    />
+    <meta
+      property="og:url"
+      content="https://www.viander.com.br/tomate-pelati.html"
+    />
+    <meta
+      property="og:image"
+      content="https://www.viander.com.br/assets/img/pizza-italiana.webp"
+    />
+    <meta property="og:image:width" content="1536" />
+    <meta property="og:image:height" content="1024" />
+    <meta
+      property="og:image:alt"
+      content="Pizza com molho de tomate e manjericão — imagem gastronômica ilustrativa"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "Organization",
+            "@id": "https://www.viander.com.br/#organization",
+            "name": "Viander Brasil",
+            "url": "https://www.viander.com.br/",
+            "logo": "https://www.viander.com.br/assets/img/logo-viander.png",
+            "description": "Tomates italianos Viander para pizzarias, restaurantes, distribuidores e cozinhas profissionais. Importação e distribuição por Agrobrokers Importação e Exportação Ltda.",
+            "email": "vendas@viander.com.br",
+            "telephone": "+55-11-99936-5401",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Rua Mendes Caldeira, 555, Brás",
+              "addressLocality": "São Paulo",
+              "addressRegion": "SP",
+              "addressCountry": "BR"
+            },
+            "sameAs": ["https://www.instagram.com/viander.br/"]
+          },
+          {
+            "@type": "WebSite",
+            "@id": "https://www.viander.com.br/#website",
+            "url": "https://www.viander.com.br/",
+            "name": "Viander Brasil",
+            "inLanguage": "pt-BR",
+            "publisher": { "@id": "https://www.viander.com.br/#organization" }
+          },
+          {
+            "@type": "WebPage",
+            "@id": "https://www.viander.com.br/tomate-pelati.html#webpage",
+            "url": "https://www.viander.com.br/tomate-pelati.html",
+            "name": "Tomate Pelati Salsati 2,550 kg | Tomate italiano Viander",
+            "description": "Tomates inteiros, pelados e em conserva, cultivados na Itália. Para quem gosta de construir o molho desde a textura e dar personalidade a cada receita.",
+            "inLanguage": "pt-BR",
+            "isPartOf": { "@id": "https://www.viander.com.br/#website" },
+            "about": { "@id": "https://www.viander.com.br/#organization" }
+          },
+          {
+            "@type": "Product",
+            "@id": "https://www.viander.com.br/tomate-pelati.html#product",
+            "name": "Tomate Pelati Salsati Viander 2,550 kg",
+            "description": "Tomates inteiros, pelados e em conserva, cultivados na Itália. Para quem gosta de construir o molho desde a textura e dar personalidade a cada receita.",
+            "image": "https://www.viander.com.br/assets/img/salsati-min.png",
+            "brand": { "@type": "Brand", "name": "Viander" },
+            "countryOfOrigin": { "@type": "Country", "name": "Itália" },
+            "weight": {
+              "@type": "QuantitativeValue",
+              "value": 2.55,
+              "unitCode": "KGM"
+            },
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Apresentação",
+                "value": "Tomates inteiros e pelados"
+              }
+            ]
+          },
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Início",
+                "item": "https://www.viander.com.br/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Tomate Pelati Salsati",
+                "item": "https://www.viander.com.br/tomate-pelati.html"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "Qual é a embalagem?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Tomate Pelati Salsati Viander é apresentado em lata de 2,550 kg, de origem italiana."
                 }
-                localStorage.setItem('theme', theme);
-            }
-
-            function toggleTheme() {
-                const currentTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
-                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
-                setTheme(newTheme);
-            }
-
-            themeToggle.addEventListener("click", toggleTheme);
-
-            // Verifica o tema salvo no localStorage ou usa a preferência do sistema
-            const savedTheme = localStorage.getItem('theme') || (prefersDarkScheme.matches ? 'dark' : 'light');
-            setTheme(savedTheme);
-        });
+              },
+              {
+                "@type": "Question",
+                "name": "Para quais preparos é indicado?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Indicado para molhos rústicos, massas e pizzas. Ajuste tempero, textura e preparo conforme a sua receita."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Como consultar preço e disponibilidade?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Fale com a equipe comercial pelo WhatsApp (11) 99936-5401 ou pelo e-mail vendas@viander.com.br. Informe cidade, produto e volume para receber as condições de compra."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Onde consultar ingredientes e conservação?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Consulte o rótulo do produto e as informações do lote para ingredientes, alergênicos, validade e conservação antes e após a abertura. Solicite a ficha técnica à equipe comercial se precisar de mais detalhes."
+                }
+              }
+            ]
+          }
+        ]
+      }
     </script>
-</body>
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+    <div class="topbar">
+      <div class="container">
+        <span>Da Itália para a sua cozinha profissional.</span
+        ><a
+          href="https://wa.me/5511999365401?text=Olá%21%20Quero%20conhecer%20os%20tomates%20Viander."
+          target="_blank"
+          rel="noopener noreferrer"
+          >Atendimento comercial
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            aria-hidden="true"
+          >
+            <path d="M4 12h15M13 5l7 7-7 7" /></svg
+        ></a>
+      </div>
+    </div>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Navegação principal">
+        <a class="brand" href="index.html" aria-label="Viander Brasil — início"
+          ><img
+            src="assets/img/logo-viander.png"
+            alt="Viander, il Mangiarbene"
+            width="110"
+            height="78"
+        /></a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="menu-principal"
+        >
+          <span></span><span></span>
+        </button>
+        <div class="nav-links" id="menu-principal">
+          <a href="index.html#produtos">Nossos tomates</a
+          ><a href="guia-tomates-italianos.html">Na sua cozinha</a
+          ><a href="index.html#sobre">A Viander</a
+          ><a href="index.html#duvidas">Dúvidas</a
+          ><a class="button button-small" href="index.html#contato"
+            >Pedir orçamento<svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15M13 5l7 7-7 7" /></svg
+          ></a>
+        </div>
+      </nav>
+    </header>
+    <main id="conteudo">
+      <div class="container breadcrumbs">
+        <a href="index.html">Início</a><span aria-hidden="true">/</span
+        ><a href="index.html#produtos">Nossos tomates</a
+        ><span aria-hidden="true">/</span><span>Tomate Pelati Salsati</span>
+      </div>
+      <section class="container product-hero">
+        <div class="product-stage stage-pelati">
+          <p class="eyebrow">POMODORO ITALIANO</p>
+          <img
+            src="assets/img/salsati-min.png"
+            width="499"
+            height="499"
+            alt="Lata de Tomate Pelati Salsati Viander de 2,550 kg"
+            fetchpriority="high"
+          /><span class="stage-weight">LATA <strong>2,550 kg</strong></span>
+        </div>
+        <div class="product-intro">
+          <p class="eyebrow">VIANDER · ORIGEM ITALIANA</p>
+          <h1>Tomate Pelati <br /><em>Salsati.</em></h1>
+          <p class="product-lead">
+            A liberdade de trabalhar a textura. O prazer do sabor italiano.
+          </p>
+          <p>
+            Tomates inteiros, pelados e em conserva, cultivados na Itália. Para
+            quem gosta de construir o molho desde a textura e dar personalidade
+            a cada receita.
+          </p>
+          <dl class="specs">
+            <div>
+              <dt>Apresentação</dt>
+              <dd>Tomates inteiros e pelados</dd>
+            </div>
+            <div>
+              <dt>Embalagem</dt>
+              <dd>Lata de 2,550 kg</dd>
+            </div>
+            <div>
+              <dt>Origem</dt>
+              <dd>Itália</dd>
+            </div>
+            <div>
+              <dt>Aplicações</dt>
+              <dd>Molhos rústicos, massas e pizzas</dd>
+            </div>
+          </dl>
+          <a
+            class="button button-primary"
+            href="index.html?produto=pelati#contato"
+            >Pedir orçamento deste produto<svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15M13 5l7 7-7 7" /></svg
+          ></a>
+          <p class="small-note">
+            Consulte disponibilidade, frete e condições com a equipe comercial.
+          </p>
+        </div>
+      </section>
+      <section class="section container">
+        <p class="eyebrow">UM INGREDIENTE, MUITAS POSSIBILIDADES</p>
+        <h2>Mais espaço para <em>a sua receita.</em></h2>
+        <div class="benefit-grid">
+          <article>
+            <span>01</span>
+            <h3>Textura sob seu controle</h3>
+            <p>
+              Esmague ou processe os tomates conforme a receita: de pedaços mais
+              rústicos a uma base mais uniforme.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Versatilidade no cardápio</h3>
+            <p>
+              Uma opção para molhos de massa, bases de pizza, lasanhas, sopas e
+              outras criações da cozinha.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Pronto para começar</h3>
+            <p>
+              Os tomates já vêm pelados, dispensando essa etapa de preparo na
+              sua operação.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="kitchen-section">
+        <div class="container preparation-grid">
+          <div>
+            <p class="eyebrow">NA PRÁTICA</p>
+            <h2>Do tomate<br /><em>ao seu molho.</em></h2>
+            <p>
+              Um ponto de partida para adaptar à rotina e ao cardápio da sua
+              cozinha.
+            </p>
+          </div>
+          <ol class="steps">
+            <li>
+              <h3>Escolha a textura</h3>
+              <p>
+                Esmague ou processe os tomates na intensidade adequada para o
+                seu molho.
+              </p>
+            </li>
+            <li>
+              <h3>Construa o sabor</h3>
+              <p>
+                Combine com os ingredientes da sua receita e ajuste o uso do
+                líquido da conserva à consistência desejada.
+              </p>
+            </li>
+            <li>
+              <h3>Finalize à sua maneira</h3>
+              <p>
+                Defina a cocção de acordo com o prato e termine com os temperos
+                da casa.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+      <section class="section container faq-grid">
+        <div>
+          <p class="eyebrow">INFORMAÇÕES DO PRODUTO</p>
+          <h2>Antes de<br /><em>escolher.</em></h2>
+          <p>Precisa da ficha técnica? Solicite à equipe comercial.</p>
+          <a
+            class="button button-text"
+            href="https://wa.me/5511999365401?text=Olá%21%20Gostaria%20da%20ficha%20técnica%20do%20Tomate%20Pelati%20Salsati."
+            target="_blank"
+            rel="noopener noreferrer"
+            >Solicitar ficha técnica<svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15M13 5l7 7-7 7" /></svg
+          ></a>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>
+              Qual é a embalagem?<span aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Tomate Pelati Salsati Viander é apresentado em lata de 2,550 kg,
+                de origem italiana.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Para quais preparos é indicado?<span aria-hidden="true">+</span>
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Indicado para molhos rústicos, massas e pizzas. Ajuste tempero,
+                textura e preparo conforme a sua receita.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Como consultar preço e disponibilidade?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Fale com a equipe comercial pelo WhatsApp (11) 99936-5401 ou
+                pelo e-mail vendas@viander.com.br. Informe cidade, produto e
+                volume para receber as condições de compra.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Onde consultar ingredientes e conservação?<span aria-hidden="true"
+                >+</span
+              >
+            </summary>
+            <div class="faq-answer">
+              <p>
+                Consulte o rótulo do produto e as informações do lote para
+                ingredientes, alergênicos, validade e conservação antes e após a
+                abertura. Solicite a ficha técnica à equipe comercial se
+                precisar de mais detalhes.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+      <section class="container section related">
+        <div>
+          <p class="eyebrow">CONHEÇA TAMBÉM</p>
+          <h2>Polpa Fina Sgrondata</h2>
+          <p>Outro formato, novas possibilidades para o seu preparo.</p>
+        </div>
+        <a class="button button-outline" href="polpa-fina.html"
+          >Ver o outro tomate<svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.7"
+            aria-hidden="true"
+          >
+            <path d="M4 12h15M13 5l7 7-7 7" /></svg
+        ></a>
+      </section>
+      <section class="section container video-section">
+        <div>
+          <p class="eyebrow">VEJA TAMBÉM</p>
+          <h2>Conheça o <em>tomate pelati.</em></h2>
+          <p>Assista ao vídeo do produto no YouTube.</p>
+          <a
+            class="button button-outline"
+            href="https://www.youtube.com/watch?v=r2TzkEM0xO8"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Assistir no YouTube
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15M13 5l7 7-7 7" /></svg
+          ></a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Viander Brasil — início"
+            ><img
+              src="assets/img/logo-viander.png"
+              alt="Viander"
+              width="130"
+              height="92"
+              loading="lazy"
+          /></a>
+          <p>O bom da Itália.<br />Todos os dias, na sua cozinha.</p>
+        </div>
+        <div>
+          <h2>Explore</h2>
+          <a href="polpa-fina.html">Polpa Fina Sgrondata</a
+          ><a href="tomate-pelati.html">Tomate Pelati Salsati</a
+          ><a href="guia-tomates-italianos.html">Guia de tomates italianos</a
+          ><a href="index.html#sobre">Sobre a Viander Brasil</a>
+        </div>
+        <div>
+          <h2>Vamos conversar</h2>
+          <a
+            href="https://wa.me/5511999365401"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WhatsApp: (11) 99936-5401</a
+          ><a href="mailto:vendas@viander.com.br">vendas@viander.com.br</a
+          ><a
+            href="https://www.instagram.com/viander.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Instagram @viander.br
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.7"
+              aria-hidden="true"
+            >
+              <path d="M4 12h15M13 5l7 7-7 7" /></svg
+          ></a>
+        </div>
+        <div>
+          <h2>Estamos em São Paulo</h2>
+          <address>
+            Rua Mendes Caldeira, 555<br />Brás · São Paulo · SP<br />Zona
+            Cerealista
+          </address>
+          <p class="distributor">
+            Importação e distribuição<br />Agrobrokers Importação e Exportação
+            Ltda.
+          </p>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© <span data-year>2026</span> Viander Brasil.</span
+        ><a href="privacidade.html">Privacidade</a
+        ><span class="italian-rule" aria-label="Origem italiana"
+          ><i></i><i></i><i></i
+        ></span>
+      </div>
+    </footer>
+    <a
+      class="floating-contact"
+      href="https://wa.me/5511999365401?text=Olá%21%20Quero%20um%20orçamento%20dos%20tomates%20Viander."
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Conversar com vendas no WhatsApp"
+      ><svg
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1.7"
+        aria-hidden="true"
+      >
+        <path d="M21 11.5a9 9 0 0 1-13.4 7.9L3 21l1.6-4.6A9 9 0 1 1 21 11.5Z" />
+        <path d="M8 8c0 4 2 6 6 7l2-2-3-1-1 1-2-2 1-1-1-3-2 1Z" /></svg
+      ><span>Fale com a Viander</span></a
+    >
+    <script src="site.js" defer></script>
+  </body>
 </html>
