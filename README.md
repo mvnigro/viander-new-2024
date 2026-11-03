@@ -42,7 +42,7 @@ Os fatos dos produtos e os contatos foram extraídos do site anterior. Não fora
 
 ## Publicação
 
-A pasta raiz é o site pronto para um host estático. Na Vercel, use o preset **Other**, sem comando de build, e publique a raiz. Preserve a configuração existente do domínio. Branches de revisão devem gerar prévias; a branch de produção é `master`.
+A pasta raiz é o site pronto para um host estático. O `package.json` fixa Node.js 26.x para o ambiente de publicação da Vercel, substituindo a configuração antiga de Node.js 20, que foi descontinuada. Não há dependências ou etapa de build do site. Na Vercel, use o preset **Other**, sem comando de build, e publique a raiz. Preserve a configuração existente do domínio. Branches de revisão devem gerar prévias; a branch de produção é `master`.
 
 Depois de publicar, confirme o redirecionamento canônico, o retorno HTTP 404 para endereços inexistentes, envie o sitemap no Search Console e valide os dados estruturados no Rich Results Test. Os produtos não têm `offers`, preço ou avaliações; os dados descrevem o catálogo e não representam uma loja com compra online ou garantia de resultado enriquecido.
 
