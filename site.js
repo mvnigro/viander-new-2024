@@ -34,6 +34,15 @@
     el.textContent = new Date().getFullYear();
   });
 
+  const contact = document.getElementById("contato");
+  const mobileQuote = document.querySelector(".mobile-quote");
+  if (contact && mobileQuote && "IntersectionObserver" in window) {
+    const observer = new IntersectionObserver(([entry]) => {
+      mobileQuote.classList.toggle("is-hidden", entry.isIntersecting);
+    });
+    observer.observe(contact);
+  }
+
   const form = document.querySelector("[data-quote-form]");
   if (!form) return;
   const name = document.getElementById("nome");

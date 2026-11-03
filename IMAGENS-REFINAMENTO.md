@@ -1,0 +1,23 @@
+# Imagens do refinamento visual
+
+Recurso utilizado: image_gen nativo. Data: 3 de novembro de 2026.
+
+Arquivos publicados em assets/img/: sgrondata-hd.webp e sgrondata-hd-600.webp; pelati-hd.webp e pelati-hd-600.webp; textura-polpa.webp; textura-pelati.webp.
+
+As duas embalagens são restaurações assistidas por IA a partir das fotos originais sgrondata.png e salsati-min.png, que permanecem no repositório. As imagens de textura são ilustrações gastronômicas e estão identificadas como tal no site.
+
+## Prompt 1
+
+Use case: identity-preserve / product photo restoration. Edit target: the supplied original Viander Polpa Fine Sgrondata can photograph. Create a high-resolution faithful restoration of this exact photograph, on a genuinely transparent background. Increase resolution and recover clean natural edges and fine detail, gently correct dull lighting and slight noise for premium catalogue photography. Keep the exact same can shape, height-to-width proportion, viewing angle, lid, red/beige label design, every existing logo, every word and letter, label artwork, illustrated tomato, typography, placement, and colors. The existing logo must read VIANDER; preserve il Mangiarbene; POLPA FINE; "sgrondata" and the original green ribbon exactly as seen. Do not invent unreadable text. Do not redesign packaging. Do not replace the food artwork. Preserve the full can with margins, no crop, no additional objects, no floor or artificial cast shadow, no new badges, no white background. Only photo restoration and high-resolution enhancement. Sharp, even studio light with natural metallic highlights. Output a square 1536x1536 transparent PNG.
+
+## Prompt 2
+
+Use case: identity-preserve / product photo restoration. Edit target: the supplied original Viander Pomodori Pelati super salsati can photograph. Create a high-resolution faithful restoration of this exact photograph, on a genuinely transparent background. Increase resolution and recover clean natural edges and fine detail, gently correct dull lighting and noise for premium catalogue photography. Keep the exact same can shape, height-to-width proportion, viewing angle, silver lid and base, red/beige label design, horizontal lines, every existing logo, every word and letter, illustrated peeled tomatoes, typography, placement and colors. The existing logo must read VIANDER; preserve il Mangiarbene; POMODORI PELATI; super salsati and the original green ribbon exactly as seen. Do not invent unreadable text. Do not redesign packaging. Do not replace the food artwork. Preserve full can with original margins, no crop, no additional objects, no floor or artificial cast shadow, no new badges, no white background. Only photo restoration and high-resolution enhancement. Sharp even studio light with natural metallic highlights. Output a square 1536x1536 transparent PNG.
+
+## Prompt 3
+
+Use case: photorealistic-natural. Asset type: texture illustration for Italian tomato product catalogue. Editorial overhead macro food photograph of finely crushed Italian tomato pulp in a shallow wide ivory ceramic bowl on warm cream travertine. The pulp is bright natural tomato red, moist and juicy with finely minced soft tomato flesh, no skins, no seeds, no seasoning, no herbs, no olive oil, not a dark concentrated paste, not a cooked sauce. Bowl fills about 80% of frame; small simple rim visible. Gentle Mediterranean window light from upper left, realistic appetizing detail, subtle shadows, warm editorial aesthetic matching a premium Italian ingredients website. Square composition, no label or text, no packaging, no hands. This is an illustrative image of texture, not a laboratory/documentary photo of the exact commercial product. 1024x1024.
+
+## Prompt 4
+
+Use case: photorealistic-natural. Asset type: texture illustration for Italian tomato product catalogue. Editorial overhead macro food photograph of four whole oblong Italian peeled plum tomatoes, glistening in their light red tomato juice, in a shallow wide ivory ceramic bowl on warm cream travertine. Natural bright red tomatoes with intact elongated shapes, peeled, smooth soft surfaces and gentle irregularities, no green stems, no skins, no herbs, no seasoning, no olive oil. The whole tomatoes remain visually distinct from crushed pulp. Bowl fills about 80% of frame; small simple rim visible. Gentle Mediterranean window light from upper left, realistic appetizing detail, subtle shadows, warm editorial aesthetic matching a premium Italian ingredients website. Square composition, no label or text, no packaging, no hands. This is an illustrative image of texture, not a laboratory/documentary photo of the exact commercial product. 1024x1024.

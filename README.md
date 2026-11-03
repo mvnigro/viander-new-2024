@@ -51,3 +51,7 @@ Depois de publicar, confirme o redirecionamento canônico, o retorno HTTP 404 pa
 Revisão no Chrome em desktop e telas de 390 e 320 px. Navegação móvel, menu, FAQ, links de produto, pré-seleção dos dois itens e abertura da mensagem de WhatsApp com dados fictícios. Checagens estáticas de H1, metadados, JSON-LD, sitemap XML, imagens, IDs, links e âncoras. Nenhuma mensagem foi enviada no teste.
 
 Veja `ASSETS.md` para a origem da imagem gerada.
+
+## Refinamento visual
+
+A abertura agora destaca as duas embalagens restauradas a partir das imagens existentes. A página inicial ganhou comparação visual das texturas, com indicação de imagem ilustrativa. Os textos de apoio e a navegação foram ampliados. No celular, a barra fixa de orçamento preserva o produto escolhido e se recolhe na área de contato. O espaço da barra é reservado para não cobrir o rodapé. As fotos originais seguem no repositório; os arquivos derivados e prompts estão documentados em IMAGENS-REFINAMENTO.md.
